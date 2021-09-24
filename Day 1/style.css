@@ -1,12 +1,29 @@
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap:  20px;
     height: 98vh;
 }
 
-.grid-col-right {
-    background: url("images/background.jpg")
+* {
+    font-family:Georgia
 }
+
+.grid-col-right {
+    background-image: url("images/background.jpg");
+    position: relative;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-content>h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: ivory;
+}
+
 .navigation-bar {
     position: relative;
 }
@@ -17,14 +34,15 @@
 
 .registeration-section{
     position: relative;
-    padding-left: 100px;
-    padding-top: 100px;
+    margin-left: 5vw;
+    margin-top: 5vw;
 }
 
 .registeration-section > h2{
     position: relative;
     display: flex;
 }
+
 
 .back-button {
     position: absolute;
@@ -37,37 +55,49 @@
     top: 0px;
 }
 
-.quote-content {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-.quote-content>h2,.quote-content> p {
-    color: white;
-}
 
 .form-input {
-    margin-top: 50px;
-    width: 200px;
+    margin: 20px auto;
+    width: inherit;
 }
 
-.signup-button > button{
-    width:50;
+.signup-button {
+    margin-left: 4px;
 }
 
 .register-form {
-    width: 200px;
+    width: 38vw;
 }
 
 hr {
     border-radius: 5px;
-    border: 10px grey solid;
-    width: 200px;
+    border: 5px grey solid;
+    width: 20vw;
+    margin-left: 10vw;
 }
 
-.existing-registration {
-    position: relative;
+.existing-registration>p, .registration-icons{
     display: flex;
     justify-content: center;
+    position: relative;
+    right: 2vw;
+}
+
+input[type=text],input[type=email], input[type=datetime], input[type=number] {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+input[type=text]:focus,input[type=email]:focus, input[type=datetime]:focus, input[type=number]:focus{
+    border: 2px solid #CC2936;
+    outline: none;
+}
+
+button{
+    background-color: #CC2936;
+    font: 1em sans-serif;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
 }
