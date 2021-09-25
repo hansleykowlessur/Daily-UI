@@ -9,36 +9,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-content">
         <div class="main-grid">
+            <!-- Left side of the page-->
             <div class="grid-col-left">
-                    <div class="navigation-bar">
-                        <img src="images/arrow_back_black_24dp.svg" class="back-button" alt="Return"/>
-                        <h2 class="login-button">Login</p>    
-                    </div>
+                    <nav class="navigation-bar">
+                        <a href="https://www.google.com">
+                            <img src="images/arrow_back_black_24dp.svg" class="back-button" alt="Return"/>
+                        </a>
+                        <h2 class="login-button">
+                            <a href="https://www.google.com" style="text-decoration:none; color: inherit;">
+                                Login  
+                            </a>
+                        </h2>
+                    </nav>
+                    <!-- Registration section of the page -->
                     <div class="registeration-section">
-                        <h2>Register</h2>
+                        <h2>
+                            <a href="https://www.google.html"  style="text-decoration:none; color: inherit;">
+                                Register
+                            </a>
+                        </h2>
                         <p>Welcome to Lorem, please fill up the respective fields.</p>
                         <form class="register-form">
                             <input class="form-input" type="text" placeholder="Full name" /> <br>
                             <input class="form-input" type="email" placeholder="Email" /> <br>
                             <input class="form-input" type="datetime" placeholder="Date of birth" /> <br>
-                            <input class="form-input" type="number" placeholder="Contact number" /> <br>                       
+                            <input class="form-input" type="tel" placeholder="Contact number" /> <br>                       
                             <button class="form-input signup-button" type="button"> Sign Up </button> 
                         </form>
+                        <!-- Grey line below the button -->
                         <hr />
                         <div class="existing-registration">
                             <p>You can also signup using:</p> 
                             <div class="registration-icons">
-                                <img src="images/facebook.png" />
-                                <img src="images/google.png" />
-                                <img src="images/twitter.png" />
+                                <a href="https://www.facebook.com">
+                                    <img alt="Facebook" src="images/facebook.png" />
+                                </a> 
+                                <a href="https://www.google.com">
+                                    <img alt="Google" src="images/google.png" />
+                                </a>
+                                <a href="https://www.twitter.com">
+                                    <img alt="Twitter" src="images/twitter.png" />
+                                </a>
                             </div>
                             <p>
                                 Image by:
@@ -51,9 +70,10 @@
                         </div>
                     </div>
             </div>
+            <!-- Right side of the page-->
             <div class="grid-col-right">
                 <div class="quote-content">
-                    <h2>Start your journey now</h2>
+                    <h2>Start your adventure now</h2>
                 </div>
             </div>
         </div>

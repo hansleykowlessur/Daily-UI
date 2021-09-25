@@ -1,63 +1,83 @@
+/* 
+Default font for all text 
+*/
+
+* {
+    font-family:Georgia;
+}
+
+/* 
+    ============
+    Variable(s) section
+    ============ 
+*/
+:root {
+    --red-accent: #CC2936;
+}
+
 .main-grid {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap:  20px;
     height: 98vh;
 }
 
-* {
-    font-family:Georgia
-}
-
-.grid-col-right {
-    background-image: url("images/background.jpg");
-    position: relative;
-    background-size:cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote-content>h2{
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    color: ivory;
-}
-
-.navigation-bar {
-    position: relative;
-}
+/* 
+    ====================
+    Left side of the page/ left column
+    ====================
+ */
 
 .grid-col-left {
     position: relative;
 }
 
-.registeration-section{
+/* 
+    Positioning of back button and login button 
+*/
+.navigation-bar {
     position: relative;
-    margin-left: 5vw;
-    margin-top: 5vw;
 }
-
-.registeration-section > h2{
-    position: relative;
-    display: flex;
-}
-
 
 .back-button {
     position: absolute;
     top: 20px;
 }
 
+/* Position the login button to the right side of the navigation section */
 .login-button {
     position: absolute;
     right: 0px;
     top: 0px;
 }
 
+/* 
+    Styling of the registration section 
+*/
+.registeration-section{
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
 
+/* Make the h2 tag take the whole space 
+so as the p tag goes to next line */
+.registeration-section > h2{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.register-form {
+    width: 38vw;
+}
+
+/* Add spacing between each form input */
 .form-input {
-    margin: 20px auto;
+    margin: 2vh auto;
     width: inherit;
 }
 
@@ -65,10 +85,30 @@
     margin-left: 4px;
 }
 
-.register-form {
-    width: 38vw;
+/* Styling og the form input  */
+input[type=text],input[type=email], input[type=datetime], input[type=tel] {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 4px;
 }
 
+/* Add red accent on focus */
+input[type=text]:focus,input[type=email]:focus, input[type=datetime]:focus, input[type=tel]:focus{
+    border: 2px solid var(--red-accent);
+    outline: none;
+}
+
+/* Styling of the button */
+button{
+    background-color: var(--red-accent);
+    font: 1em sans-serif;
+    border: none;
+    border-radius: 25px;
+    height: 4vh;
+    cursor: pointer;
+}
+
+/* Styling of the line at the bottom of the button */
 hr {
     border-radius: 5px;
     border: 5px grey solid;
@@ -77,27 +117,40 @@ hr {
 }
 
 .existing-registration>p, .registration-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     right: 2vw;
 }
 
-input[type=text],input[type=email], input[type=datetime], input[type=number] {
-    padding: 5px;
-    border: 2px solid;
-    border-radius: 4px;
+/* 
+    ====================
+    Right side of the page/ Right column
+    ====================
+ */
+
+ /* Center the content inside the section */
+.grid-col-right {
+    background-image: url("images/background.jpg");
+    position: relative;
+    background-size:cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-input[type=text]:focus,input[type=email]:focus, input[type=datetime]:focus, input[type=number]:focus{
-    border: 2px solid #CC2936;
-    outline: none;
-}
-
-button{
-    background-color: #CC2936;
-    font: 1em sans-serif;
-    border: none;
-    border-radius: 25px;
-    height: 50px;
+.quote-content>h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: ivory;
 }
