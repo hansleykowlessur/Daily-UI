@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Daily UI, Day 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amaranth" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="glass-content">
+        <div class="card-section">
+            <div class="payment-details">
+                <p>Payment method</p>
+                <div class="credit-card">
+                    <form class="credit-card-details" method="POST">
+                        <label class="credit-input" for="name">Name:</label>
+                        <input class="credit-input" type="text" id="name" name="name"> 
+                        <label class="credit-input" for="card">Card Number:</label>
+                        <input class="credit-input" type="text" id="card" name="card">
+                        <label class="credit-input" for="card_date">Date:</label> 
+                        <input class="credit-input" type="text" id="card_date" name="card_date"> 
+                        <label class="credit-input" for="cvv">CVV:</label> 
+                        <input class="credit-input" type="text" id="cvv" name="cvv"> 
+                    </form>
+                    <div class="credit-card-logo">
+                            <img src="images/badge.png" />
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="details-amount">
+                        <p>
+                            Total: <span>$100</span>
+                        </p>
+                    </div>
+                    <div class="details-quantity">
+                        <p>
+                            Amount: <span>160</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <button>
+                        Proceed to payment
+                    </button>
+                </div>
+            </div>
+            <div class="background-image">
+                <div class="tree-background">
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

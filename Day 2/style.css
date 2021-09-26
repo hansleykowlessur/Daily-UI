@@ -1,0 +1,169 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Amaranth;
+}
+
+/* Background color of the page */
+
+body {
+    background-color: #FFB4A2;
+}
+
+/* Add the glass effect with linear gradient */
+.glass-content {
+    margin:  5vh 9vh;
+    height: 90vh;
+    width: 91vw;
+    background-image: linear-gradient(to bottom right,
+    rgba(161, 128, 128, 0.5) 45%, 
+    rgba(255,255,255, 0.88)
+    );
+    border-radius: 40px;
+}
+
+/* Align item horizontally */
+.card-section{
+    display: flex;
+}
+
+/* 
+    ===============================================
+    Left side of the content 
+    ===============================================
+*/
+.payment-details {
+    background-color: white;
+    border-radius: 40px;
+    height: 90vh;
+    width: 66vw;
+    padding: 63px 67px;
+}
+
+.payment-details > p{
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+/* Styling of credit card */
+.credit-card {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    height: 335px;
+    width: 50vw;
+    background-image: linear-gradient(to bottom right,
+    rgba(255, 200, 221, 1), 
+    rgba(205,180,219, 0.61)
+    );
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Position of credit card details while making each item flow vertically */
+.credit-card-details {
+    padding: 21px 26px 33px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: inherit;
+    width: 70%;
+}
+
+/* Sizing of each label tag in the form */
+label.credit-input {
+    font-size: 32px;
+}
+
+/* Remove all styling for the input box while keeping a bottom border */
+.credit-card-details input[type="text"]
+{
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color:black;
+    border-style: solid;
+}
+
+
+/* Styling of the logo of the card */
+.credit-card-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.credit-card-logo img {
+    width: 70%;
+    height: 51%;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Styling of the total and amount of the page */
+.details-amount{
+    font-size: 32px;
+}
+
+/* Style the span tag with the required color */
+.details-amount > p > span{
+    color: #CDB4DB;
+}
+
+.details-quantity {
+    font-size: 32px;
+}
+
+/* Style the span tag with the required color */
+.details-quantity > p > span{
+    color: #CDB4DB;
+}
+
+.checkout {
+    position: relative;
+    margin-top: 5%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout > button {
+    background-color: #FFC8DD;
+    border-radius: 40px;
+    border:none;
+    height: inherit;
+    width: 80%;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+/* 
+    ===============================================
+    Right side of the content 
+    ===============================================
+*/
+.background-image {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height:90vh;
+    width: 35vw;
+    bottom: 0;
+}
+
+.tree-background{
+    background-image: url("images/background.png");
+    background-size:cover;
+    width: 100%;
+    height: 65%;
+}
