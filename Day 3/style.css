@@ -1,0 +1,153 @@
+* {
+    font-family: "Segoe Script", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.navigation-content {
+    display: flex;
+    align-self: center;
+    margin-top: 2.3%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-right: 2.5%;
+    width: max-content;
+}
+
+.nav-line::after{
+    content: ""; 
+    display: block; 
+    width: 80%;
+    margin-top: 20px; 
+    margin-left: 20%;
+    border-bottom: 2px solid white; 
+}
+
+
+#navigation-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    flex-grow: 2;
+    column-gap: 2;
+}
+
+#navigation-items li{
+    list-style: none;
+    font-family: 'Spirax', sans-serif;
+    font-size: 1.5rem;
+}
+
+#navigation-items li:last-child {
+    font-family: 'Rockwell Nova', sans-serif;
+    font-size: 1.5rem;
+    margin-right: 3.5%;
+}
+
+/* 
+    ================================================
+    Main section
+    ================================================ 
+*/
+
+main{
+    position: relative;
+    height: 100%;
+    background-image: url('images/Waves.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    margin-top: 10%;
+}
+
+
+
+
+.blob {
+    position: absolute;
+    right: 0;
+    top: -12%;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+#spinner {
+    position: relative;
+    margin-left: 20%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, transparent, transparent 40%, #CB2A70);
+    animation: spinning 5s linear infinite;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+#spinner:before{
+    position: absolute;
+    content: ' ';
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#spinner:after{
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg, transparent, transparent 40%, #CB2A70);
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur( 30px);
+}
+/* 
+    ================================================
+    Footer section
+    ================================================ 
+*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+footer img {
+    width: 100%;
+    height: auto;
+}
