@@ -10,7 +10,6 @@ body{
     height: 100vh;
     background-color: black;
     overflow: hidden;
-
 }
 
 .navigation-content {
@@ -55,6 +54,19 @@ h2 {
     font-family: 'Rockwell Nova', sans-serif;
     font-size: 1.5rem;
     margin-right: 3.5%;
+}
+
+/* Small arrows for the first 2 links in the navigation bar */
+#navigation-items li:nth-child(1)::after, #navigation-items li:nth-child(2)::after {
+    content: "";
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 /* 
